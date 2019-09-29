@@ -74,7 +74,7 @@ RUN sed -i.bak 's/user = www-data/user = root/' /etc/php/7.3/fpm/pool.d/www.conf
 
 
 ADD .docker/app/run.sh /root/run.sh
-RUN chmod 700 /root/run.sh
+RUN chmod 775 /root/run.sh
 
 RUN usermod -u 1000 www-data
 
