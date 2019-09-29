@@ -6,10 +6,6 @@ $this->title = 'My Yii Application';
 ?>
 <div class="site-index">
 
-    <pre>
-        <?php print_r(\app\models\Advertisement::find()->one()); ?>
-    </pre>
-
     <div class="jumbotron">
         <h1>Congratulations!</h1>
 
