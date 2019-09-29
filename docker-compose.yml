@@ -1,11 +1,13 @@
-version: '2.1'
+version: '3.7'
 services:
   app:
     build: .
     links:
       - db
     volumes:
-      - ./:/app:delegated
+      - type: bind
+        source: ./
+        target: /app
     ports:
       - '8000:80'
   db:
