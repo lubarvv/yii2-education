@@ -17,4 +17,4 @@ Run migrations
 docker-compose exec app ./yii migrate
 ```
 
-After you can see interface in the http://localhost:8000
+After you can see interface in the http://localhost:8080
